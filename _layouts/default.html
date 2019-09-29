@@ -1,23 +1,25 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>{{ site.title }}</title>
-    <link rel="stylesheet" type="text/css" href="/css/test.css">
+    <title>{{ page.title }}</title>
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
 </head>
 <body>
 
-<div class="container">
+<header>
+    <nav>
+        <a href="/">Home</a>
+    </nav>
+</header>
+
+<main class="container">
     {{ content }}
-</div>
+</main>
 
 <footer>
-    <ul>
-        <li><a href="https://github.com/mp3000mp">Github</a></li>
-        <li><a href="/cv">cv</a></li>
-        <li><a href="/about">about</a></li>
-    </ul>
+    <a href="https://github.com/mp3000mp">Github</a>
 </footer>
 
-<script src="/js/test.js"></script>
+<script src="/js/TableTrHref.js"></script>
 </body>
 </html>

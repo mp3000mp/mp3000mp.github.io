@@ -1,0 +1,64 @@
+---
+layout: default
+title: Demo table-tr-href
+---
+
+<div id="demo">
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        td{
+            padding: 0.25rem 0.75rem;
+        }
+
+        /* keep td padding */
+        tr.tth > td{
+            padding: 0;
+        }
+        tr.tth > td > a{
+            padding: 0.25rem 0.75rem;
+        }
+
+        /* on hover color */
+        tr.tth:hover{
+            background-color: #4d97ff;
+        }
+
+        /* cancel link default style */
+        tr.tth > td > a{
+            color: black;
+            text-decoration: none;
+        }
+    </style>
+
+    <table>
+        <tr>
+            <th>Column A</th>
+            <th>Column B</th>
+        </tr>
+        <tr data-href="https://github.com/mp3000mp/table-tr-href">
+            <td>The entire row</td>
+            <td>is a link</td>
+        </tr>
+        <tr data-href="https://github.com/mp3000mp/table-tr-href" data-target="_blank">
+            <td>The entire row</td>
+            <td>is a target _blank link</td>
+        </tr>
+    </table>
+
+    <script type="text/javascript">
+			document.addEventListener('DOMContentLoaded', function(){
+				TableTrHref.init();
+			}, false);
+    </script>
+</div>
+
+<div id="links">
+    <ul>
+        <li><a href="https://github.com/mp3000mp/table-tr-href/blob/master/examples/basic.html">Source code example</a></li>
+        <li><a href="https://github.com/mp3000mp/table-tr-href/">Documentation</a></li>
+        <li><a href="https://github.com/mp3000mp/table-tr-href/">Github repository</a></li>
+        <li><a href="https://www.npmjs.com/package/table-tr-href">NPM package</a></li>
+    </ul>
+</div>
